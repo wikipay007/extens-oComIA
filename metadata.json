@@ -1,0 +1,5 @@
+{
+  "name": "Smart Write Companion",
+  "description": "AI-powered writing assistant Chrome extension that corrects grammar and rewrites text in real-time.",
+  "requestFramePermissions": []
+}

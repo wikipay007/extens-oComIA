@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Smart Write Companion",
+  "version": "1.0",
+  "description": "AI-powered writing assistant using Google Gemini.",
+  "permissions": [
+    "scripting",
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://generativelanguage.googleapis.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "action": {
+    "default_popup": "index.html"
+  }
+}
